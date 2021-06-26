@@ -77,3 +77,7 @@ E:\Tüm Projeler\C#\Web Çalışmaları\Admin-Panelli-CV-PRojesi-MVC-5-\MvcCv\Mv
 E:\Tüm Projeler\C#\Web Çalışmaları\Admin-Panelli-CV-PRojesi-MVC-5-\MvcCv\MvcCv\obj\Debug\MvcCv.csproj.CopyComplete
 E:\Tüm Projeler\C#\Web Çalışmaları\Admin-Panelli-CV-PRojesi-MVC-5-\MvcCv\MvcCv\obj\Debug\MvcCv.dll
 E:\Tüm Projeler\C#\Web Çalışmaları\Admin-Panelli-CV-PRojesi-MVC-5-\MvcCv\MvcCv\obj\Debug\MvcCv.pdb
+E:\Tüm Projeler\C#\Web Çalışmaları\Admin-Panelli-CV-PRojesi-MVC-5-\MvcCv\MvcCv\bin\EntityFramework.dll
+E:\Tüm Projeler\C#\Web Çalışmaları\Admin-Panelli-CV-PRojesi-MVC-5-\MvcCv\MvcCv\bin\EntityFramework.SqlServer.dll
+E:\Tüm Projeler\C#\Web Çalışmaları\Admin-Panelli-CV-PRojesi-MVC-5-\MvcCv\MvcCv\bin\EntityFramework.xml
+E:\Tüm Projeler\C#\Web Çalışmaları\Admin-Panelli-CV-PRojesi-MVC-5-\MvcCv\MvcCv\bin\EntityFramework.SqlServer.xml
