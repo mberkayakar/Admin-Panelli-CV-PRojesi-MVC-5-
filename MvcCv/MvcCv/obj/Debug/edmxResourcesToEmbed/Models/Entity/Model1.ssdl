@@ -45,6 +45,7 @@
     <Property Name="mailiki" Type="varchar" MaxLength="50" />
     <Property Name="aciklama" Type="varchar(max)" />
     <Property Name="adres" Type="varchar(max)" />
+    <Property Name="Telefon2" Type="varchar" MaxLength="20" />
   </EntityType>
   <EntityType Name="TblLogin">
     <Key>

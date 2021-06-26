@@ -40,6 +40,7 @@
     <EntitySetMapping Name="TblHakkimdas">
       <EntityTypeMapping TypeName="DbCVModel.TblHakkimda">
         <MappingFragment StoreEntitySet="TblHakkimda">
+          <ScalarProperty Name="Telefon2" ColumnName="Telefon2" />
           <ScalarProperty Name="adres" ColumnName="adres" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Ad" ColumnName="Ad" />

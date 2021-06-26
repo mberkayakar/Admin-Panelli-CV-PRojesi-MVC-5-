@@ -50,6 +50,7 @@
           <Property Name="mailiki" Type="varchar" MaxLength="50" />
           <Property Name="aciklama" Type="varchar(max)" />
           <Property Name="adres" Type="varchar(max)" />
+          <Property Name="Telefon2" Type="varchar" MaxLength="20" />
         </EntityType>
         <EntityType Name="TblLogin">
           <Key>
@@ -123,6 +124,7 @@
           <Property Name="mailiki" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="adres" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Telefon2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="TblLogin">
           <Key>
@@ -192,6 +194,7 @@
           <EntitySetMapping Name="TblHakkimdas">
             <EntityTypeMapping TypeName="DbCVModel.TblHakkimda">
               <MappingFragment StoreEntitySet="TblHakkimda">
+                <ScalarProperty Name="Telefon2" ColumnName="Telefon2" />
                 <ScalarProperty Name="adres" ColumnName="adres" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Ad" ColumnName="Ad" />
