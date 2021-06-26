@@ -44,6 +44,7 @@
     <Property Name="mailbir" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="mailiki" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="adres" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="TblLogin">
     <Key>

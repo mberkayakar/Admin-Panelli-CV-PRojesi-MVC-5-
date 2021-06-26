@@ -21,5 +21,6 @@ namespace MvcCv.Models.Entity
         public string mailbir { get; set; }
         public string mailiki { get; set; }
         public string aciklama { get; set; }
+        public string adres { get; set; }
     }
 }

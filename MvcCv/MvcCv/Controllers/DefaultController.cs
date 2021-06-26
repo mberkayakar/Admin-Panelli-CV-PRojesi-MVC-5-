@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MvcCv.Models.Entity;
 
 namespace MvcCv.Controllers
 {
     public class DefaultController : Controller
     {
-        // GET: Default
+        DbCVEntities db = new DbCVEntities();
         public ActionResult Index()
         {
-            return View();
+            var degerler = db.TblHakkimdas.ToList();
+            return View(degerler);
         }
 
     }

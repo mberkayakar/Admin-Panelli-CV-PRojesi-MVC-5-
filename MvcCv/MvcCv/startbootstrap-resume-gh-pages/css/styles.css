@@ -7336,7 +7336,7 @@ textarea.form-control-lg {
 
 /* rtl:end:remove */
 .text-primary {
-  color: #bd5d38 !important;
+  color: rgba(99,195,191,0.7) !important;
 }
 
 .text-secondary {
@@ -7392,7 +7392,7 @@ textarea.form-control-lg {
 }
 
 .bg-primary {
-  background-color: #bd5d38 !important;
+  background-color: black !important;
 }
 
 .bg-secondary {
@@ -10908,11 +10908,11 @@ p.lead {
     margin: auto auto 0;
     padding: 0.5rem;
   }
-  #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
-    border: 0.5rem solid rgba(0, 0, 255, 0.7);
-  }
+    #sideNav .navbar-brand .img-profile {
+        max-width: 10rem;
+        max-height: 10rem;
+        border: 0.5rem solid rgba(99, 195, 191, 0.7);
+    }
   #sideNav .navbar-collapse {
     display: flex;
     align-items: flex-start;
