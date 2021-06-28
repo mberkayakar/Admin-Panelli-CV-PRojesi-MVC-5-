@@ -16,10 +16,16 @@ namespace MvcCv.Controllers
             return View(degerler);
         }
 
-        public PartialViewResult deneyim()
+        public PartialViewResult Deneyim()
         {
-            return PartialView();
+            var deneyimler = db.TblDeneyimlers.ToList();
+            return PartialView(deneyimler);
         }
 
+        public PartialViewResult Eğitim()
+        {
+            var egitim = db.TblDeneyimlers.ToList();
+            return PartialView(egitim);
+        }
     }
 }
