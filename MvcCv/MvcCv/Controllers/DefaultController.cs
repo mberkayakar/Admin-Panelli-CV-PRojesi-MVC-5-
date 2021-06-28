@@ -16,5 +16,10 @@ namespace MvcCv.Controllers
             return View(degerler);
         }
 
+        public PartialViewResult deneyim()
+        {
+            return PartialView();
+        }
+
     }
 }
