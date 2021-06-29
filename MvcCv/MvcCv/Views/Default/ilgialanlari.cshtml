@@ -1,0 +1,22 @@
+﻿
+@using MvcCv.Models.Entity;
+@model  List<Tblilgialanim>
+
+
+@{
+    Layout = null;
+}
+
+
+
+<section class="resume-section" id="interests">
+    <div class="resume-section-content">
+        @foreach (var item in Model)
+        {
+            <h2 class="mb-5">İlgi Alanları</h2>
+            <p class="mb-0">@item.aciklama</p>
+        }
+
+    </div>
+</section>
+

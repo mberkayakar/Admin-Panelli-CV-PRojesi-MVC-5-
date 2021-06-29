@@ -5,12 +5,13 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="abfc88cedfb54a96ab32384c1a0693f2" Name="Diagram1">
-        <EntityTypeShape EntityType="DbCVModel.iletisim" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbCVModel.TblDeneyimler" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCVModel.iletisim" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCVModel.TblDeneyimler" Width="1.5" PointX="2.375" PointY="1.375" IsExpanded="true" />
         <EntityTypeShape EntityType="DbCVModel.TblEgitim" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbCVModel.TblHakkimda" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbCVModel.TblLogin" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbCVModel.TblYetenekler" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCVModel.TblHakkimda" Width="1.5" PointX="2.375" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCVModel.TblLogin" Width="1.5" PointX="4" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCVModel.TblYetenekler" Width="1.5" PointX="4" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCVModel.Tblilgialanim" Width="1.5" PointX="5.625" PointY="1.375" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

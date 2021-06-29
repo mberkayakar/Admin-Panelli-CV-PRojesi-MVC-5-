@@ -22,10 +22,23 @@ namespace MvcCv.Controllers
             return PartialView(deneyimler);
         }
 
-        public PartialViewResult Eğitim()
+        public PartialViewResult Egitimlerim ()
         {
-            var egitim = db.TblDeneyimlers.ToList();
-            return PartialView(egitim);
+            var egitimler = db.TblEgitims.ToList();
+            return PartialView(egitimler);
         }
+
+        public PartialViewResult Yetenekler()
+        {
+            var yetenekler = db.TblYeteneklers.ToList();
+            return PartialView(yetenekler);
+        }
+
+        public PartialViewResult ilgialanlari()
+        {
+            var yetenek = db.Tblilgialanims.ToList();
+            return PartialView(yetenek);
+        }
+
     }
 }

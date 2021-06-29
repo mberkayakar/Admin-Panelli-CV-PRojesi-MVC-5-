@@ -31,5 +31,6 @@ namespace MvcCv.Models.Entity
         public virtual DbSet<TblHakkimda> TblHakkimdas { get; set; }
         public virtual DbSet<TblLogin> TblLogins { get; set; }
         public virtual DbSet<TblYetenekler> TblYeteneklers { get; set; }
+        public virtual DbSet<Tblilgialanim> Tblilgialanims { get; set; }
     }
 }

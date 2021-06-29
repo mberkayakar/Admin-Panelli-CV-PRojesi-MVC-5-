@@ -61,6 +61,8 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" />
     <Property Name="yetenek_ismi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="yetenek_yuzdesi" Type="Decimal" Precision="3" Scale="0" />
+    <Property Name="yetenek_renk" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityContainer Name="DbCVEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="iletisims" EntityType="Self.iletisim" />
@@ -69,5 +71,13 @@
     <EntitySet Name="TblHakkimdas" EntityType="Self.TblHakkimda" />
     <EntitySet Name="TblLogins" EntityType="Self.TblLogin" />
     <EntitySet Name="TblYeteneklers" EntityType="Self.TblYetenekler" />
+    <EntitySet Name="Tblilgialanims" EntityType="DbCVModel.Tblilgialanim" />
   </EntityContainer>
+  <EntityType Name="Tblilgialanim">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="aciklama" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" />
+  </EntityType>
 </Schema>

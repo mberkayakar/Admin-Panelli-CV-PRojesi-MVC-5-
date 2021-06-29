@@ -47,6 +47,13 @@
     <Property Name="adres" Type="varchar(max)" />
     <Property Name="Telefon2" Type="varchar" MaxLength="20" />
   </EntityType>
+  <EntityType Name="Tblilgialanim">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="aciklama" Type="nvarchar" MaxLength="3000" />
+  </EntityType>
   <EntityType Name="TblLogin">
     <Key>
       <PropertyRef Name="İd" />
@@ -61,12 +68,15 @@
     </Key>
     <Property Name="Id" Type="int" Nullable="false" />
     <Property Name="yetenek_ismi" Type="varchar" MaxLength="50" />
+    <Property Name="yetenek_yuzdesi" Type="numeric" Precision="3" Scale="0" />
+    <Property Name="yetenek_renk" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityContainer Name="DbCVModelStoreContainer">
     <EntitySet Name="iletisim" EntityType="Self.iletisim" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblDeneyimler" EntityType="Self.TblDeneyimler" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblEgitim" EntityType="Self.TblEgitim" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblHakkimda" EntityType="Self.TblHakkimda" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tblilgialanim" EntityType="Self.Tblilgialanim" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblLogin" EntityType="Self.TblLogin" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblYetenekler" EntityType="Self.TblYetenekler" Schema="dbo" store:Type="Tables" />
   </EntityContainer>

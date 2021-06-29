@@ -64,8 +64,18 @@
     <EntitySetMapping Name="TblYeteneklers">
       <EntityTypeMapping TypeName="DbCVModel.TblYetenekler">
         <MappingFragment StoreEntitySet="TblYetenekler">
+          <ScalarProperty Name="yetenek_renk" ColumnName="yetenek_renk" />
+          <ScalarProperty Name="yetenek_yuzdesi" ColumnName="yetenek_yuzdesi" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="yetenek_ismi" ColumnName="yetenek_ismi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tblilgialanims">
+      <EntityTypeMapping TypeName="DbCVModel.Tblilgialanim">
+        <MappingFragment StoreEntitySet="Tblilgialanim">
+          <ScalarProperty Name="aciklama" ColumnName="aciklama" />
+          <ScalarProperty Name="id" ColumnName="id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

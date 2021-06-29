@@ -16,5 +16,7 @@ namespace MvcCv.Models.Entity
     {
         public int Id { get; set; }
         public string yetenek_ismi { get; set; }
+        public Nullable<decimal> yetenek_yuzdesi { get; set; }
+        public string yetenek_renk { get; set; }
     }
 }

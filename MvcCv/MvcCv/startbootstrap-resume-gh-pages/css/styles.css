@@ -18,7 +18,9 @@
 
 /* End The Typewritter*/
 
-
+.progress-bar {
+    background-color: rgba(99,195,191,0.7) !important;
+}
 
 
 :root {
@@ -223,9 +225,9 @@ a {
     color: rgba(99,195,191,0.7);
     text-decoration: underline;
 }
-a:hover {
-  color: #974a2d;
-}
+    a:hover {
+        color: color: rgba(99,195,191);
+    }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
@@ -10957,9 +10959,9 @@ p.lead {
 .social-icons .social-icon:last-child {
   margin-right: 0;
 }
-.social-icons .social-icon:hover {
-  background-color: #bd5d38;
-}
+    .social-icons .social-icon:hover {
+        background-color: rgba(99,195,191,0.7);
+    }
 
 .dev-icons {
   font-size: 3rem;

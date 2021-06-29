@@ -52,6 +52,13 @@
           <Property Name="adres" Type="varchar(max)" />
           <Property Name="Telefon2" Type="varchar" MaxLength="20" />
         </EntityType>
+        <EntityType Name="Tblilgialanim">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="aciklama" Type="nvarchar" MaxLength="3000" />
+        </EntityType>
         <EntityType Name="TblLogin">
           <Key>
             <PropertyRef Name="İd" />
@@ -66,12 +73,15 @@
           </Key>
           <Property Name="Id" Type="int" Nullable="false" />
           <Property Name="yetenek_ismi" Type="varchar" MaxLength="50" />
+          <Property Name="yetenek_yuzdesi" Type="numeric" Precision="3" Scale="0" />
+          <Property Name="yetenek_renk" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityContainer Name="DbCVModelStoreContainer">
           <EntitySet Name="iletisim" EntityType="Self.iletisim" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblDeneyimler" EntityType="Self.TblDeneyimler" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblEgitim" EntityType="Self.TblEgitim" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblHakkimda" EntityType="Self.TblHakkimda" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tblilgialanim" EntityType="Self.Tblilgialanim" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblLogin" EntityType="Self.TblLogin" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblYetenekler" EntityType="Self.TblYetenekler" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
@@ -140,6 +150,8 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" />
           <Property Name="yetenek_ismi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="yetenek_yuzdesi" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="yetenek_renk" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityContainer Name="DbCVEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="iletisims" EntityType="Self.iletisim" />
@@ -148,7 +160,15 @@
           <EntitySet Name="TblHakkimdas" EntityType="Self.TblHakkimda" />
           <EntitySet Name="TblLogins" EntityType="Self.TblLogin" />
           <EntitySet Name="TblYeteneklers" EntityType="Self.TblYetenekler" />
+          <EntitySet Name="Tblilgialanims" EntityType="DbCVModel.Tblilgialanim" />
         </EntityContainer>
+        <EntityType Name="Tblilgialanim">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="aciklama" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -218,8 +238,18 @@
           <EntitySetMapping Name="TblYeteneklers">
             <EntityTypeMapping TypeName="DbCVModel.TblYetenekler">
               <MappingFragment StoreEntitySet="TblYetenekler">
+                <ScalarProperty Name="yetenek_renk" ColumnName="yetenek_renk" />
+                <ScalarProperty Name="yetenek_yuzdesi" ColumnName="yetenek_yuzdesi" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="yetenek_ismi" ColumnName="yetenek_ismi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tblilgialanims">
+            <EntityTypeMapping TypeName="DbCVModel.Tblilgialanim">
+              <MappingFragment StoreEntitySet="Tblilgialanim">
+                <ScalarProperty Name="aciklama" ColumnName="aciklama" />
+                <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
