@@ -1,0 +1,47 @@
+﻿
+@using MvcCv.Models.Entity;
+@model  List<TblDeneyimler>
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Deneyim </title>
+</head>
+<body>
+    <div>
+        <section class="resume-section" id="experience">
+
+           
+            <div class="resume-section-content">
+
+                <h2 class="mb-5">DENEYİMLER </h2>
+                @foreach (var deneyimler in Model)
+                {
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-2">@deneyimler.Baslık</h3>
+
+                            <div class="subheading mb-3">@deneyimler.AltBaslık</div>
+                            <p> @deneyimler.Aciklama</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">@deneyimler.tarih</span></div>
+    
+                    </div>
+                    <br >
+                }
+
+
+            </div>
+
+            
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿@using MvcCv.Models.Entity
+@model List<TblYetenekler>
+
+<section class="resume-section" id="skills">
+    <div class="resume-section-content">
+        <h2 class="mb-5">Yetenekler</h2>
+        @foreach (var item in Model)
+        {
+
+    <div class="row">
+        <div class="col-1"> </div>
+        <div class="col-10">
+
+
+            <h4 style="text-align: center" class="mb-0">@item.yetenek_ismi</h4>
+            <br>
+
+            <div class="progress">
+
+                <div class="progress-bar" role="progressbar" style="width: @item.yetenek_yuzdesi%; background-color:@item.yetenek_renk" aria-valuemax="100">@item.yetenek_yuzdesi %</div>
+            </div>
+
+
+        </div>
+        <div class="col-1"> </div>
+
+    </div>
+    <br>
+        } 
+    </div>
+
+</section>
